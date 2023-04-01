@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Invoice Program</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="main">
+      <h1>Invoice Program</h1>
+      <div id="buttons">
+        <button onclick="showEntertaimentForm()">Entertaiment</button>
+        <button onclick="showDigitalProductForm()">Digital Product</button>
+      </div>
+      <div id="entertaiment-form" style="display:none">
+        <h2>Entertaiment Form</h2>
+        <form onsubmit="return false;">
+          <label for="name">Nama Pembeli:</label>
+          <input type="text" id="name" name="name" required><br><br>
+          <label for="name2">Nama Penjual:</label>
+          <input type="text" id="name2" name="name2" required><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required><br><br>
+          <label for="password">Password:</label>
+          <input type="text" id="password" name="password" required><br><br>
+          <label for="item">Item Produk:</label>
+          <input type="text" id="item" name="item" required><br><br>
+          <label for="harga_seller">Harga seller:</label>
+          <input type="number" id="harga_seller" name="harga_seller" required><br><br>
+          <label for="harga_simlic">Harga simlic:</label>
+          <input type="number" id="harga_simlic" name="harga_simlic" required><br><br>
+          <button onclick="submitEntertaimentForm()">Print</button>
+        </form>
+      </div>
+      <div id="digital-product-form" style="display:none">
+        <h2>Digital Product Form</h2>
+        <form onsubmit="return false;">
+          <label for="name">Nama Pembeli:</label>
+          <input type="text" id="name" name="name" required><br><br>
+          <label for="email">Email Pembeli:</label>
+          <input type="email" id="email" name="email" required><br><br>
+          <label for="item">Item Produk:</label>
+          <input type="text" id="item" name="item" required><br><br>
+          <label for="license-key">License Key:</label>
+          <input type="text" id="license-key" name="license-key" required><br><br>
+          <label for="harga_seller">Harga seller:</label>
+          <input type="number" id="harga_seller" name="harga_seller" required><br><br>
+          <label for="harga_simlic">Harga simlic:</label>
+          <input type="number" id="harga_simlic" name="harga_simlic" required><br><br>
+          <button onclick="submitDigitalProductForm()">Print</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
